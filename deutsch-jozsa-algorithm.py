@@ -16,7 +16,7 @@ def H_n(n):
 def dj_oracle(f, n):
     N = 2**n
     dim = 2**(n + 1)
-    U = np.zero((dim, dim))
+    U = np.zeros((dim, dim))
 
     for x in range(N):
         for y in [0, 1]:
@@ -62,7 +62,7 @@ def deutsch_jozsa(f, n):
 def f0(x): return 0
 def f1(x): return 1
 
-def parity(x): return bin().count("1") % 2
+def parity(x): return bin(x).count("1") % 2
 
 print(deutsch_jozsa(f0, 3))
 print(deutsch_jozsa(f1, 3))

@@ -72,4 +72,5 @@ print(deutsch(lambda x: 1-x))
 # Balanced
 
 # Deutsch algorithm exist to prove a point it's just conceptual
-# Detusch algorithm proves: "A quantum computer can extract globla information about a function with fewer queries than any classical computer"
+# Deutsch algorithm proves: "A quantum computer can extract globla information about a function with fewer queries than any classical computer"
+# It computes: "Are f(0) and f(1) the same?"

@@ -1,4 +1,4 @@
-import num as np
+import numpy as np
 
 # Basis
 zero = np.array([1, 0])
@@ -28,7 +28,7 @@ def oracle(f):
 
 # Running Deutsch 🐐🐐🐐🐐🐐🐐🐐🐐
 #
-def deutsch(): # 🐐🐐
+def deutsch(f): # 🐐🐐
     # Initial state |0>|1>
     psi = kron(zero, one)
 
@@ -58,7 +58,7 @@ def deutsch(): # 🐐🐐
 
 #  Testing constant
 print(deutsch(lambda x: 0))
-print(detusch(lambda x: 1))
+print(deutsch(lambda x: 1))
 
 # Testing Balanced
 print(deutsch(lambda x: x))
